@@ -3,28 +3,43 @@ title: "manuscript"
 author: "Kelly Balfour"
 date: "`r Sys.Date()`"
 output: pdf_document
+bibliography: references.bib
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+## Introduction
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+Plants may exhibit specific functional traits in response to local environmental conditions. Previous studies have determined that leaf anatomy and plant size of *Acer* (maple) species can vary depending on the habitat occupied; for example, *Acer* species may exhibit larger and thinner leaves under forest canopy shading [@lei1990]. Nutrient supplementation is also known to influence plant traits, with widespread fertilizer use being common practise in agriculture. Calcium is vital to cell growth, but plant calcium requirements are typically low; therefore, the impact of calcium supplementation on leaf anatomy and plant size could be variable [@burstrom1968]. This data project investigates whether and how calcium availability influences leaf and stem traits in *Acer saccharum* (sugar maple), a culturally, economically, and ecologically important tree species.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+## Methods
 
-```{r cars}
-summary(cars)
+The dataset used, "hbr_maples" [@juice], was loaded from the R package "lterdatasampler" [@hbrmapl]. Sampling took place during August 2003 and June 2004 at the Hubbard Brook Experimental Forest in Woodstock, New Hampshire, USA [@hbrmapl]. At two watershed sites, reference and calcium-treated, researchers sampled *Acer saccharum* (sugar maple tree) seedlings within transects that were growing 10 steps apart [@hbrmapl]. The height of each seedling (mm) was recorded and the stems were collected; from each stem, two leaf areas (cm2), one leaf dry mass (g), and stem dry mass (g) were measured [@juice].
+
+## Results
+
+Will be added!
+
+## Discussion
+
+This is what I discovered from these data, wow!
+
+## Conclusion
+
+Maple trees are super cool!
+
+## References
+
+```{r}
+#Zotero was linked to RStudio; citations added to this file are automatically updated in the "references.bib" file located in the "04_manuscript" folder. 
 ```
 
-## Including Plots
+[@burstrom1968]
 
-You can also embed plots, for example:
+[@hbrmapl]
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
+[@juice]
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+[@lei1990]
