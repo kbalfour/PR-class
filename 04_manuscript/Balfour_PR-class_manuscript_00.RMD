@@ -1,0 +1,68 @@
+---
+title: "How does calcium addition impact leaf anatomy and plant size of *Acer saccharum*?"
+author: "Kelly Balfour"
+date: "`r Sys.Date()`"
+output:
+  pdf_document:
+    fig_crop: false
+    fig_width: 5
+    fig_height: 3
+  html_document:
+    df_print: paged
+bibliography: references.bib
+---
+
+```{r setup, include=F}
+knitr::opts_chunk$set(eval = T, echo = T, include=F)
+#Load data set
+maples<-lterdatasampler::hbr_maples
+```
+
+## Introduction
+
+Plants may exhibit specific functional traits in response to local environmental conditions. Previous studies have determined that leaf anatomy and plant size of *Acer* (maple) species can vary depending on the habitat occupied; for example, *Acer* species may exhibit larger and thinner leaves under forest canopy shading [@lei1990]. Nutrient supplementation is also known to influence plant traits, with widespread fertilizer use being common practise in agriculture. Calcium is vital to cell growth, but plant calcium requirements are typically low; therefore, the impact of calcium supplementation on leaf anatomy and plant size could be variable [@burstrom1968]. This data project investigates whether and how calcium availability influences leaf and stem traits in *Acer saccharum* (sugar maple), a culturally, economically, and ecologically important tree species.
+
+## Methods
+
+The dataset used, "hbr_maples" [@juice], was loaded from the R package "lterdatasampler" [@hbrmapl]. Sampling took place during August 2003 and June 2004 at the Hubbard Brook Experimental Forest in Woodstock, New Hampshire, USA [@hbrmapl]. At two watershed sites, reference and calcium-treated, researchers sampled *Acer saccharum* (sugar maple tree) seedlings within transects that were growing 10 steps apart [@hbrmapl]. The height of each seedling (mm) was recorded and the stems were collected; from each stem, two leaf areas (cm2), one leaf dry mass (g), and stem dry mass (g) were measured [@juice].
+
+## Results
+
+```{r fig1, echo=F, include=T, warning=F}
+library(ggplot2)
+#Create figure 1: a boxplot of the mean stem lengths exhibited in each watershed (reference and W1):
+ggplot(data=maples, aes(x=watershed, y=stem_length,   fill=watershed)) + geom_boxplot() + ggtitle("Maple stem lengths in watersheds")
+```
+
+Figure 1: A box plot depicting the distribution of sample stem lengths in the reference (mean=82.59888) and calcium addition ("W1"; mean=91.09611) watersheds. An independent t-test indicates that stem length is significantly greater in the calcium addition watershed than the reference watershed (t(357)=-5.4588, p\<0.05).
+
+```{r fig2, echo=F, include=T, warning=F}
+#Create figure 2: a boxplot of the mean leaf areas exhibited in each watershed (reference and W1):
+ggplot(data=maples, aes(x=watershed, y=leaf1area,   fill=watershed)) + geom_boxplot() + ggtitle("Maple leaf areas in watersheds")
+```
+
+Figure 2: A box plot depicting the distribution of sample leaf areas in the reference (mean=9.47105) and calcium addition ("W1"; mean=14.12907) watersheds. An independent t-test indicates that leaf area is significantly greater in the calcium addition watershed than the reference watershed (t(238)=-10.854, p\<0.05).
+
+```{r fig3, echo=F, include=T, warning=F}
+#Create figure 3: a boxplot of the mean leaf dry masses exhibited in each watershed (reference and W1):
+ggplot(data=maples, aes(x=watershed, y=leaf_dry_mass,   fill=watershed)) + geom_boxplot() + ggtitle("Maple leaf dry masses in watersheds")
+```
+
+Figure 3: A box plot depicting the distribution of sample leaf dry masses in the reference (mean=0.04953296) and calcium addition ("W1"; mean=0.07774333) watersheds. An independent t-test indicates that leaf dry mass is significantly greater in the calcium addition watershed than the reference watershed (t(357)=-8.0459, p\<0.05).
+
+```{r fig4, echo=F, include=T, warning=F}
+#Create figure 4: a boxplot of the mean stem dry masses exhibited in each watershed (reference and W1):
+ggplot(data=maples, aes(x=watershed, y=stem_dry_mass,   fill=watershed)) + geom_boxplot() + ggtitle("Maple stem dry masses in watersheds")
+```
+
+Figure 4: A box plot depicting the distribution of sample stem dry masses in the reference (mean=0.03676592) and calcium addition ("W1"; mean=0.05331278) watersheds. An independent t-test indicates that stem dry mass is significantly greater in the calcium addition watershed than the reference watershed (t(357)=-5.4465, p\<0.05).
+
+## Discussion
+
+The results of this study indicate that calcium availability can influence the leaf anatomy and plant size of *Acer saccharum* seedlings. Maples sampled from the calcium addition watershed had significantly greater stem lengths, leaf areas, leaf dry masses, and stem dry masses than maples sampled from the reference watershed. This finding suggests that although the calcium requirements of *Acer saccharum* are low, calcium addition still impacts plant growth. Future work should assess soil nutrient availability in these transects, as low local soil calcium content may help explain the positive correlations observed between calcium addition and plant size and leaf anatomy.
+
+## Conclusion
+
+The leaf anatomy and plant size of *Acer saccharum* are influenced by calcium availability, with calcium addition being correlated with longer stem lengths, larger leaf areas, larger leaf dry masses, and larger stem dry masses in seedlings.
+
+## References

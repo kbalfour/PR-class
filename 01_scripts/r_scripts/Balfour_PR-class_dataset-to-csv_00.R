@@ -34,7 +34,7 @@ setwd()
 maples.data <- lterdatasampler::hbr_maples
 # Save these data as a .csv file called "mapledata.csv" in the "00_rawdata"
 # folder:
-write.table(maples.data, file = "mapledata.csv", append = F, quote = F, 
+write.table(maples.data, file = "Balfour_PR-class_raw-data_00.csv", append = F, quote = F, 
             sep = ",", dec = ".", col.names = T, row.names = F)
 
 # Now, the csv file can be found in our computer directory!

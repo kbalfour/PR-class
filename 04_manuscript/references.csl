@@ -1,0 +1,143 @@
+[
+	{
+		"id": "http://zotero.org/users/14968415/items/YYK6NNE9",
+		"type": "webpage",
+		"abstract": "lterdatasampler",
+		"language": "en",
+		"title": "hbr_maples - Hubbard Brook Experimental Forest Sugar Maples (HBR)",
+		"URL": "https://lter.github.io/lterdatasampler/articles/hbr_maples_vignette.html",
+		"accessed": {
+			"date-parts": [
+				[
+					"2024",
+					9,
+					20
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/14968415/items/3AJMX4CK",
+		"type": "dataset",
+		"abstract": "We examined the health and mycorrhizal colonization\n      rates of sugar maple germinants on a Calcium (Ca)- treated\n      watershed at Hubbard Brook Experimental Forest and compared\n      their status to the health of seedlings growing on reference\n      sites. We quantified general sugar maple germinant health by\n      height, leaf area, biomass, and chlorophyll content. To\n      determine vesicular-arbuscular mycorrhizal colonization\n      rates, we first cleared and stained germinant roots and then\n      examined their structures microscopically. We found that\n      sugar maple seedlings on the Ca-addition site were taller,\n      had larger leaves, more root, leaf, and stem biomass, and\n      more chlorophyll per unit leaf area. These seedlings also had\n      a significantly larger percentage of their roots colonized by\n      mycorrhizal fungi. Our results indicate a correlation between\n      soil Ca availability, mycorrhizal colonization rates, and\n      overall seedling health.\n      These data were gathered as part of the Hubbard Brook\n      Ecosystem Study (HBES). The HBES is a collaborative effort at\n      the Hubbard Brook Experimental Forest, which is operated and\n      maintained by the USDA Forest Service, Northern Research\n      Station.",
+		"DOI": "10.6073/PASTA/0ADE53EDE9A916A36962799B2407097E",
+		"language": "en",
+		"publisher": "Environmental Data Initiative",
+		"source": "DOI.org (Datacite)",
+		"title": "Health and mycorrhizal colonization response of sugar     maple (Acer saccharum) seedlings to calcium addition in     Watershed 1 at the Hubbard Brook Experimental Forest",
+		"URL": "https://portal.edirepository.org/nis/mapbrowse?packageid=knb-lter-hbr.157.3",
+		"author": [
+			{
+				"family": "Juice",
+				"given": "Stephanie"
+			},
+			{
+				"family": "Fahey",
+				"given": "Tim"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2024",
+					9,
+					20
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2019"
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/14968415/items/3PQ4UTCD",
+		"type": "article-journal",
+		"abstract": "Saplings of three, co-occurring maple species in a mature maple-beech forest differed in a suite of structural and physiological characters that separated the canopy species, Acer, saccharum, from the two subcanopy species, A. pensylvanicum and A. spicatum. Acer saccharum had both more dense wood and tougher and heavier but thinner leaves than the subcanopy species. Acer pensylvanicum had the largest, lightest leaves with high stomatal density and its canopy architecture was the most effective in terms of leaf display for light interception. Acer spicatum had weaker wood similar to that of A. pensylvanicum but also small, soft and relatively poorly displayed leaves. Both subcanopy species maintained marginally higher average rates of photosynthesis over the growing season in the understory environment. We consider juvenile A. saccharum only shade-tolerant, capable of persisting through long periods in the closed canopy until a gap occurs but not specifically adapted to the understory environment. Juvenile A. sacchrum appears to be constrained functionally by the requirements set by the canopy environment that adults will occupy. Characters such as high wood density are already expressed in the understory sapling; this investment in denser wood slows the growth of saplings, but is necessary for structural reasons in the adult. Juvenile A. saccaharum have morphological and photosynthetic characters better suited to gas exchange and extension growth under the increased photon flux densities in large forest gaps, characteristics that will also be advantageous in the sunlit canopy environment of adults.",
+		"container-title": "Oecologia",
+		"DOI": "10.1007/BF00318275",
+		"ISSN": "1432-1939",
+		"issue": "2",
+		"journalAbbreviation": "Oecologia",
+		"language": "en",
+		"page": "224-228",
+		"source": "Springer Link",
+		"title": "Shade adaptation and shade tolerance in saplings of three Acer species from eastern North America",
+		"URL": "https://doi.org/10.1007/BF00318275",
+		"volume": "84",
+		"author": [
+			{
+				"family": "Lei",
+				"given": "T. T."
+			},
+			{
+				"family": "Lechowicz",
+				"given": "M. J."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2024",
+					9,
+					20
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"1990",
+					9,
+					1
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/14968415/items/Q6N8Z6SX",
+		"type": "article-journal",
+		"abstract": "Calcium as a plant nutrient is characterized by its relatively high content in the plant coupled with a requirement not much higher than that of a micro nutrient element and an exceedingly uneven occurrence in soils. The difficulties in defining its actions are accentuated by a weak biochemical activity. In ecological conditions the secondary consequences of variations in calcium content may be more striking than the direct ones. Electron-microscopical studies have revealed that calcium is required for formation and maintenance of lamellary systems in cell organellae, a fact which might suffice to explain its indispensability for meristematic growth. Calcium is required for cell elongation in both shoots and roots; the common experience that it inhibits shoot elongation is certainly due to calcium additions far above actual requirement. It must be assumed for a rational interpretation of cell elongation that the fundamental mechanism is the same in shoots and roots. The one action which can be ascribed with certainty to calcium is a stabilizing of the cell wall with an increase in rigidity, an effect which, with over-optimal supply, may lead to growth inhibitions. The function is, however, necessary for the normal organization of cell walls. Calcium has, on the contrary, no significant effect on the synthesis of cell wall compounds but appears to act on their proper incorporation into the cell wall. The growth-active calcium may be bound not only to pectins but also to proteins and nucleoproteids in or in close contact with the cell wall. The supposition that calcium interacts directly with auxin in the cell wall has not been verified and does not seem very probable. There are reasons to believe that the points of action of calcium and auxin in the cell wall differ, auxin inducing growth by wall loosening and calcium establishing new wall parts. For submerged organs it may be necessary to consider an indirect effect of calcium on growth by its regulation of cytoplasmic permeability and thus affecting the exudation of growth-active compounds. The ecological problem is to characterize calcifuges (acid soil plants) from calcicoles (base soil or calcareous soil plants). Growth inhibitions on acid soils depend upon poisoning by A13+ and Mn2+. Opinions differ as to what extent this can be antagonized by calcium. Lime-induced chlorosis in calcifuges depends upon iron deficiency or iron inactivation in the plant. No acceptable explanation is given, but it might be related to an interaction of calcium carbonate, phosphorus, and iron. A hypothesis that it is linked to formation of organic acids is not tenable in the given form. Plants react to the calcium ions in the concentrations found in soils. Calcifuges have a low calcium-optimum for growth and show growth inhibition at high concentrations. Calcicoles have a high optimum for growth. Calcifuges are resistant to aluminium poisoning. Attempts made to explain the differences in calcium uptake and generally in salt uptake are tentative only, and relevant data are lacking.",
+		"container-title": "Biological Reviews",
+		"DOI": "10.1111/j.1469-185X.1968.tb00962.x",
+		"ISSN": "1469-185X",
+		"issue": "3",
+		"language": "en",
+		"note": "_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1111/j.1469-185X.1968.tb00962.x",
+		"page": "287-316",
+		"source": "Wiley Online Library",
+		"title": "Calcium and Plant Growth",
+		"URL": "https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1469-185X.1968.tb00962.x",
+		"volume": "43",
+		"author": [
+			{
+				"family": "Burstrom",
+				"given": "H. G."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2024",
+					9,
+					20
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"1968"
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/14968415/items/8TQQD8HA",
+		"type": "document",
+		"title": "references"
+	}
+]
