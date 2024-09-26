@@ -18,28 +18,45 @@
 
 # SET-UP ----------------------------------------------------------------------
 # Install and load packages required:
-install.packages("tidyverse", "ggplot2", "dplyr")
-library("tidyverse", "ggplot2", "dplyr")
+install.packages("ggplot2")
+library("ggplot2")
+# NOTE: If you've updated RStudio recently, remember to update your version of
+# R and rtools as well!
 
-# Set the working directory:
-setwd("C://Users/kelly/Documents/PR-class/")
+# Set the working directory to the main project directory "PR-class":
+setwd("~/PR-class")
+# You can also do this manually
 
 # Load the "maples.data.csv" file created previously from the "00_rawdata"
 # folder to a data matrix:
-maples.data <- read_csv("./00_rawdata/Balfour_PR-class_raw-data_00.csv")
+maples.data<-read.csv("./00_rawdata/Balfour_PR-class_raw-data_00.csv")
 
-#Complete independent t-tests for each trait:
-#Stem length
-t.test (stem_length ~ watershed, var.equal=TRUE, data = maples.data)
-#Reference mean = 82.59888, W1 mean = 91.09611 (t(357)=-5.4588, p<0.05)
-#Leaf area
-t.test (leaf1area ~ watershed, var.equal=TRUE, data = maples.data)
-#Reference mean = 9.47105, W1 mean = 14.12907 (t(238)=-10.854, p<0.05)
-#Leaf dry mass
-t.test (leaf_dry_mass ~ watershed, var.equal=TRUE, data = maples.data)
-#Reference mean = 0.04953296, W1 mean = 0.07774333 (t(357)=-8.0459, p<0.05)
-#Stem dry mass
-t.test (stem_dry_mass ~ watershed, var.equal=TRUE, data = maples.data)
-#Reference mean = 0.03676592, W1 mean = 0.05331278 (t(357)=-5.4465, p<0.05)
+# Complete independent t-tests for each trait, which will be written into one
+# data matrix:
+t.tests<-list()
+# Stem length
+t.tests[[1]]<-t.test(stem_length~watershed, var.equal=TRUE, data=maples.data)
+# Leaf area
+t.tests[[2]]<-t.test(leaf1area~watershed, var.equal=TRUE, data=maples.data)
+# Leaf dry mass
+t.tests[[3]]<-t.test(leaf_dry_mass~watershed, var.equal=TRUE, data=maples.data)
+# Stem dry mass
+t.tests[[4]]<-t.test(stem_dry_mass~watershed, var.equal=TRUE, data=maples.data)
+
+# Extract the relevant statistics from these t-tests and place into one matrix:
+table1.ttests<-t(sapply(t.tests, function(x) {
+  c(x$estimate[1], x$estimate[2], ci.lower = x$conf.int[1], 
+    ci.upper = x$conf.int[2], x$statistic[1], x$parameter[1],
+    p.value = x$p.value)
+}))
+# Rename the columns to the traits used for each t-test:
+colnames(table1.ttests)<-c("Stem length","Leaf area","Leaf dry_mass",
+                           "Stem dry_mass")
+# And rename the rows, to be more concise:
+rownames(table1.ttests)<-c("Mean (reference)", "Mean (W1)", "Lower CI",
+                           "Upper CI", "t value", "df", "p value")
+
+# View the table of t-test results:
+table1.ttests
 
 # END OF SCRIPT----------------------------------------------------------------

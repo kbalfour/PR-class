@@ -24,18 +24,18 @@ library("lterdatasampler")
 # From the package "lterdatasampler", we will be saving the dataset "hbr_maple"
 # to a .csv file in the "00_rawdata" folder in the project directory.
 
-# Set the working directory to the "00_rawdata" folder directly:
-setwd("C://Users/kelly/Documents/PR-class/00_rawdata")
-# Or manually:
-setwd()
+# Set the working directory to the "00_rawdata" folder in the "PR-class"
+# project directory:
+setwd("~/PR-class/00_rawdata")
+# You can also do this manually
 
 # Acquire the "hbr_maples" dataset, and load these data to a data matrix
 # called "maples.data":
-maples.data <- lterdatasampler::hbr_maples
+maples.data<-lterdatasampler::hbr_maples
 # Save these data as a .csv file called "mapledata.csv" in the "00_rawdata"
 # folder:
-write.table(maples.data, file = "Balfour_PR-class_raw-data_00.csv", append = F, quote = F, 
-            sep = ",", dec = ".", col.names = T, row.names = F)
+write.table(maples.data, file="Balfour_PR-class_raw-data_00.csv", append=F, 
+            quote=F, sep=",", dec=".", col.names=T, row.names=F)
 
 # Now, the csv file can be found in our computer directory!
 
