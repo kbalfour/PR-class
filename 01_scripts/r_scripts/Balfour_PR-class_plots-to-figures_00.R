@@ -40,28 +40,28 @@ setwd("./03_figs")
 # (reference and W1):
 ggplot(data=maples.data, aes(x=watershed, y=stem_length, fill=watershed)) +
   geom_boxplot() + ggtitle("Maple stem lengths in watersheds")
-dev.copy(jpeg,'Balfour_PR-class_figure1_stem-length_00.png')
+dev.copy(pdf,'Balfour_PR-class_figure1_stem-length_00.pdf')
 dev.off()
 
 # Figure 2: a boxplot of the mean leaf areas exhibited in each watershed 
 # (reference and W1):
 ggplot(data=maples.data, aes(x=watershed, y=leaf1area, fill=watershed)) +
   geom_boxplot() + ggtitle("Maple leaf areas in watersheds")
-dev.copy(jpeg,'Balfour_PR-class_figure2_leaf-area_00.png')
+dev.copy(pdf,'Balfour_PR-class_figure2_leaf-area_00.pdf')
 dev.off()
 
 # Figure 3: a boxplot of the mean leaf dry masses exhibited in each watershed
 # (reference and W1):
 ggplot(data=maples.data, aes(x=watershed, y=leaf_dry_mass, fill=watershed)) +
   geom_boxplot() + ggtitle("Maple leaf dry masses in watersheds")
-dev.copy(jpeg,'Balfour_PR-class_figure3_leaf-dry-mass_00.png')
+dev.copy(pdf,'Balfour_PR-class_figure3_leaf-dry-mass_00.pdf')
 dev.off()
 
 # Figure 4: a boxplot of the mean stem dry masses exhibited in each watershed
 # (reference and W1):
 ggplot(data=maples.data, aes(x=watershed, y=stem_dry_mass, fill=watershed)) +
   geom_boxplot() + ggtitle("Maple stem dry masses in watersheds")
-dev.copy(jpeg,'Balfour_PR-class_figure4_stem-dry-mass_00.png')
+dev.copy(pdf,'Balfour_PR-class_figure4_stem-dry-mass_00.pdf')
 dev.off()
 
 # END OF SCRIPT----------------------------------------------------------------
